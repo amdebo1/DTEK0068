@@ -21,6 +21,6 @@ int main(void)
          * Reverse state of led
 		 */
         PORTB ^= (1 << PIN5);
-        _delay_ms(500);
+        _delay_ms(100);
     }
 }
