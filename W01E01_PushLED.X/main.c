@@ -1,8 +1,9 @@
 /*
  * File:   main.c
- * Author: dtek
+ * Author: Aleksander Debowski amdebo@utu.fi
  *
- * Created on 31 October 2021, 22:42
+ * The program turns on the LED when button is pressed and
+ * turns it off when the button is released
  */
 
 
@@ -20,10 +21,13 @@ int main(void)
     {
         // If PF6 high turn the LED on
         if (PORTF.IN & PIN6_bm)
+        {
             PORTF.OUT |= PIN5_bm;
+        }
         else
+        {
             PORTF.OUT &= ~PIN5_bm;
-        
+        }
         
     }
 }
