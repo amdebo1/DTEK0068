@@ -1,8 +1,10 @@
 /*
  * File:   main.c
- * Author: dtek
+ * Author: Aleksander Debowski amdebo@utu.fi
  *
- * Created on 07 November 2021, 22:58
+ * The program uses 7-segment LED display to countdown from 9 to 0
+ * If it reaches 0 it will start blinking that value. If the wire connected from
+ * PIN4 in PORTA to the ground is cut the countdown will stop
  */
 
 
